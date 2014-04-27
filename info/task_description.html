@@ -1,39 +1,66 @@
 <p>
-    <i>( Describe task in general )</i>
+    In this mission you should write you own py3 realisation
+    for the builtin functions <strong>min</strong> and <strong>max</strong>.
+    Some builtin functions are closed here: <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>.
+    Don't forget you should realise two functions in your code.
+</p>
+
+<div>
+    <p style="font-weight: bold">
+        max(iterable, *[, key]) or min(iterable, *[, key])<br>
+        max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
+    </p>
+
+    <p>
+        Return the largest (smallest) item in an iterable or the largest of two or more arguments.
+    </p>
+
+    <p>
+        If one positional argument is provided, it should be an iterable.
+        The largest (smallest) item in the iterable is returned. If two or more positional arguments are provided,
+        the largest (smallest) of the positional arguments is returned.
+    </p>
+
+    <p>
+        The optional keyword-only key argument specifies a function
+        of one argument that is used to extract a comparison key from each list element (for example, key=str.lower).
+        The default value of None means that iterable items are compared directly without calculating a separate key
+        value.
+    </p>
+
+    <div>
+        If multiple items are maximal (minimal), the function returns the first one encountered.
+        This is consistent with other sort-stability preserving tools
+        such as <pre style="display: inline">sorted(iterable, key=keyfunc, reverse=True)[0]</pre> and
+        <pre style="display: inline">heapq.nlargest(1, iterable, key=keyfunc)</pre>.
+    </div>
+</div>
+<br>
+<p>
+    <strong>Input: </strong> One positional argument as an iterable or two or more positional arguments.
+    Optional keyword argument as a function.
 </p>
 
 <p>
-    Sum two passed ints
+    <strong>Output: </strong> The largest item for the "max" function and the smallest for the "min" function.
 </p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
-</p>
-
-<p>
-    <strong>Output: </strong> Int. 
-</p>
-
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
+
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+max(3, 2) == 3
+min(3, 2) == 2
+max(range(5)) == 4
+min("hello") == "e"
+max(2.2, 5.6, 5.9, key=int) == 5.6
+min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
     </pre>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
 </p>
