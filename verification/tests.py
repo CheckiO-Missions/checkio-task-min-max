@@ -48,7 +48,7 @@ TESTS = {
                 "python-27": prepare + run_test.format(max_range)
             },
             "show": {"python-3": max_range, "python-27": max_range},
-            "answer": 2
+            "answer": 4
         },
         {
             "test_code": {
@@ -56,7 +56,7 @@ TESTS = {
                 "python-27": prepare + run_test.format(min_hello)
             },
             "show": {"python-3": min_hello, "python-27": min_hello},
-            "answer": 2
+            "answer": "e"
         },
         {
             "test_code": {
@@ -64,15 +64,15 @@ TESTS = {
                 "python-27": prepare + run_test.format(two_max_items)
             },
             "show": {"python-3": two_max_items, "python-27": two_max_items},
-            "answer": 2
+            "answer": 5.6
         },
         {
             "test_code": {
                 "python-3": prepare + run_test.format(lambda_key),
                 "python-27": prepare + run_test.format(lambda_key)
             },
-            "show": {"python-3": two_max_items, "python-27": lambda_key},
-            "answer": 2
+            "show": {"python-3": lambda_key, "python-27": lambda_key},
+            "answer": [9, 0]
         },
 
 
