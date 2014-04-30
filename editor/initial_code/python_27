@@ -1,8 +1,8 @@
-def min(*args, key=None):
+def min(*args, **kwargs):
     return None
 
 
-def max(*args, key=None):
+def max(*args, **kwargs):
     return None
 
 
