@@ -43,6 +43,7 @@ TESTS = {
         prepare_test("max(range(6))", 5),
         prepare_test("min(abs(i) for i in range(-10, 10))", 0),
         prepare_test("max(x + 5 for x in range(6))", 10),
+        prepare_test('max(filter(str.isalpha,"@v$e56r5CY{]"))', 'v'),
         prepare_test("min({1, 2, 3, 4, -10})", -10),
         prepare_test("max(set('djsaljldsklfjzx'))", "z"),
         prepare_test("min(set('djsaljldsklfjzx'))", "a"),
