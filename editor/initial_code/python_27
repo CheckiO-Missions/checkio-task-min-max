@@ -1,8 +1,10 @@
 def min(*args, **kwargs):
+    key = kwargs.get("key", None)
     return None
 
 
 def max(*args, **kwargs):
+    key = kwargs.get("key", None)
     return None
 
 
