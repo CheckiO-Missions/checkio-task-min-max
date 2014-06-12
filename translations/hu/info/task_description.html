@@ -1,0 +1,90 @@
+<p>
+    A robotok úgy döntöttek, hogy szemügyre veszik a saját belső berendezéseiket,
+    és még talán tökéletesíteni is tudnak majd valamit magukon. Ebben a feladatban 
+    Önnek saját változatot (py3 verzióban) kell készítenie a <strong>min</strong> 
+    és a <strong>max</strong> beépített függvényekről. Néhány függvény használata 
+    blokkolva van itt: <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>. 
+    Ne feledje, hogy ebben a feladatban nem egy függvényt kell megvalósítania, hanem kettőt!
+</p>
+
+<p style="font-weight: bold">
+        max(iterable, *[, key]) vagy min(iterable, *[, key])<br>
+        max(arg1, arg2, *args[, key]) vagy min(arg1, arg2, *args[, key])
+    </p>
+<div style="padding-left: 40px">
+
+
+    <p>
+        Visszaadja a legnagyobb (legkisebb) elemét az iteráltnak (itarable) 
+        vagy a legnagyobb (legkisebb) elemet két vagy több argumentum közül.
+    </p>
+
+    <p>
+        Ha csak egy pozíciós argumentum van megadva, akkor annak iterálhatónak 
+        kell lennie. Ebben az esetben a függvény a legnagyobb (legkisebb) elemet 
+        adja vissza az iteráltból. Ha két vagy több pozíciós argumentuma van, akkor 
+        az argumentumok közül a legnagyobb (legkisebb) lesz visszaadva.
+    </p>
+
+    <p>
+        A nem kötelező kulcs-argumentum egy egyargumentumos függvényt kíván, amely 
+        az összehasonlítási kulcs kiválasztására szolgál minden egyes tömbelem 
+        számára (például, key=str.lower).
+    </p>
+
+    <div>
+        Ha a tömb több maximális (minimális) elemet tartalmaz, akkor a függvény 
+        sorrendben a tömbben talált első elemet adja vissza.
+    </div>
+
+    <div>
+        <br>
+        <em>-- Python dokumentáció (<a href="https://docs.python.org/3.3/library/functions.html">Beépített függvények</a>, angol nyelven )</em>
+    </div>
+</div>
+<br>
+
+<!--<p>-->
+    <!--<strong>Tips: </strong>-->
+    <!--You should write <strong>two</strong> functions with the similar functionality.-->
+    <!--They can use the common code, which you can move common part in a separate function.-->
+    <!--This is <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> (don't repeat yourself) principle.-->
+<!--</p>-->
+<p>
+    <strong>Bemeneti adatok: </strong> egy pozíciós argumentum, mint egy iterálható 
+    elem, illetve két vagy több pozíciós argumentum. A nem kötelező kulcs-argumentum, 
+    mint egy függvény.
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> Legnagyobb elem a „max” függvény esetében 
+    és a legkisebb elem a „min” függvény esetében.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Példák:</strong>
+    </p>
+    <pre class="brush: python">
+max(3, 2) == 3
+min(3, 2) == 2
+max([1, 2, 0, 3, 4]) == 4
+min("hello") == "e"
+max(2.2, 5.6, 5.9, key=int) == 5.6
+min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
+    </pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Ez a feladat segít mélyebben megérteni azt, hogy hogyan működnek a beépített függvények.
+</p>
+
+
+<p>
+    <strong>Előfeltételek: </strong>
+    Minden teszt helyes, megegyezik a függvény leírásában megadott követelményekkel, és nem okozhat kivételt.
+</p>
