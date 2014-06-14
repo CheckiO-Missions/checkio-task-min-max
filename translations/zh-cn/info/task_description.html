@@ -1,0 +1,80 @@
+﻿<p>
+    在这个任务中，你应该自己写出PY3中实现的内建函数
+    <strong>min</strong> 和 <strong>max</strong>。
+    一些内建函数在这里是不能用的：<em>import</em>，<em>eval</em>，<em>exec</em>，<em>globals</em>。
+    别忘了，你需要在你的代码中实现两个函数。
+</p>
+
+<p style="font-weight: bold">
+        max(iterable, *[, key]) 或者 min(iterable, *[, key])<br>
+        max(arg1, arg2, *args[, key]) 或者 min(arg1, arg2, *args[, key])
+    </p>
+<div style="padding-left: 40px">
+
+
+    <p>
+        返回迭代中的最大（最小）项中或者返回根据所提供参数的最大（最小）值 。
+    </p>
+
+    <p>
+        如果有一个参数时，它应该是一个迭代器。返回在迭代器的最大（最小）的项。如果提供两个或更多的参数，返回参数中的最大（最小）的项。 
+    </p>
+
+    <p>
+        可选的唯一关键字是一个用于从每个列表元素提取一个用于比较的参数的函数。（例如，key=str.lower.lower）
+    </p>
+
+    <div>
+        如果有多个值同是最大（最小）的，函数返回所遇到的第一个最大值。
+    </div>
+
+    <div>
+        <br>
+        <em>-- Python 文档 (<a href="https://docs.python.org/3.3/library/functions.html">内建函数</a>)</em>
+    </div>
+</div>
+<br>
+
+<!--<p>-->
+    <!--<strong>Tips: </strong>-->
+    <!--You should write <strong>two</strong> functions with the similar functionality.-->
+    <!--They can use the common code, which you can move common part in a separate function.-->
+    <!--This is <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> (don't repeat yourself) principle.-->
+<!--</p>-->
+<p>
+    <strong>输入: </strong> 
+    一个参数作为一个迭代器或两个以上的参数。 
+    一个函数作为可选关键字参数。
+</p>
+
+<p>
+    <strong>输出: </strong> "max" 函数输出最大的项  "min" 函数输出最小的项。
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>范例:</strong>
+    </p>
+    <pre class="brush: python">
+max(3, 2) == 3
+min(3, 2) == 2
+max([1, 2, 0, 3, 4]) == 4
+min("hello") == "e"
+max(2.2, 5.6, 5.9, key=int) == 5.6
+min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
+    </pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>如何使用：</strong>
+    此任务将帮助你了解一些内置的功能是如何在更精确的水平上工作的。
+</p>
+
+
+<p>
+    <strong>前提:</strong>
+    所有的测试用例都是正确的并且函数不会引发异常。
+</p>
