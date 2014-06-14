@@ -11,6 +11,8 @@ api.add_listener(
     CheckiORefereeCode(
         tests=TESTS,
         # add_allowed_modules=[],
-        add_close_builtins=["import", "__import__", "eval", "exec", "min", "max"],
+        add_close_builtins=["import",
+                            # "__import__",
+                            "eval", "exec", "min", "max"],
         # remove_allowed_modules=[]
     ).on_ready)
