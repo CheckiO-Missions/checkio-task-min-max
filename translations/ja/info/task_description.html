@@ -1,12 +1,7 @@
 <p>
-    <!--
-    In this mission you should write you own py3 implementation of the built-in functions min and max.
-    Some builtin functions are closed here: import, eval, exec, globals.
-    Don't forget you should implement two functions in your code.
-    -->
-    このミッションでは組み込み関数<strong>min</strong> と<strong>max</strong> のPython3の実装をしなければいけません。
-    幾つかの組み込み関数はこれに近しい: <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>.
-    あなたはコードの中で二つの関数を実装しなけれならないのを忘れないでください。
+ このミッションでは組み込み関数<strong>min</strong> と<strong>max</strong> のPython3の実装をしなければいけません。
+ 幾つかの組み込み関数は使用禁止です: <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>.
+ あなたはコードの中で二つの関数を実装しなけれならないのを忘れないでください。
 </p>
 
 <p style="font-weight: bold">
@@ -17,41 +12,26 @@
 
 
     <p>
-      <!--
-      Return the largest (smallest) item in an iterable or the largest(smallest) of two or more arguments.
-      -->
       引数iterableの中の最大値(最小値)、もしくは2つ以上の引数の最大値(最小値)を返却する
     </p>
 
     <p>
-      <!--
-      If one positional argument is provided, it should be an iterable.
-      The largest (smallest) item in the iterable is returned. If two or more positional arguments are provided,
-      the largest (smallest) of the positional arguments is returned.
-      -->
       引数が一つの場合、それはiterableであるべきです。最大値(最小値)の要素をその中から返します。
       引数が2個もしくはそれ以上の場合、引数の中の最大(最小値)を返します。
     </p>
 
     <p>
-        <!--
-        The optional keyword-only key argument specifies a function
-        of one argument that is used to extract a comparison key from each list element (for example, key=str.lower).
-        -->
-        オプションのキーワード引数keyは、一つの引数を受け取る関数を指定します。
-        その関数はリストの各要素から比較するキーを抽出するのに利用されます。(例: key=str.lower)
+      オプションのキーワード引数keyは、一つの引数を受け取る関数を指定します。
+      その関数はリストの各要素から比較するキーを抽出するのに利用されます。(例: key=str.lower)
     </p>
 
     <div>
-        <!--
-        If multiple items are maximal (minimal), the function returns the first one encountered.
-        -->
-        もし複数の最大値(最小値)の要素が見つかったら、関数は最初に見つかったものを返します。
+      もし複数の最大値(最小値)の要素が見つかったら、関数は最初に見つかったものを返します。
     </div>
 
     <div>
-        <br>
-        <em>-- Python Documentation (<a href="https://docs.python.org/3.3/library/functions.html">Built-in Functions</a>)</em>
+      <br>
+      <em>-- Python Documentation (<a href="https://docs.python.org/3.3/library/functions.html">Built-in Functions</a>)</em>
     </div>
 </div>
 <br>
@@ -63,27 +43,17 @@
     <!--This is <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> (don't repeat yourself) principle.-->
 <!--</p>-->
 <p>
-    <!--
-    <strong>Input: </strong> One positional argument as an iterable or two or more positional arguments.
-    Optional keyword argument as a function.
-    -->
-    <strong>入力: </strong> iterableな単一の引数、もしくは2つ以上の引数。オプショナルなキーワード引数。
+ <strong>入力: </strong> iterableな単一の引数、もしくは2つ以上の引数。(オプション) キーワード引数形式の関数。
 </p>
 
 <p>
-    <!--
-    <strong>Output: </strong> The largest item for the "max" function and the smallest for the "min" function.
-    -->
-    <strong>出力: </strong> "max" 関数の最大値 と "min" 関数の最小値.
+  <strong>出力: </strong> "max" 関数の最大値 と "min" 関数の最小値.
 </p>
 
 
 <div class="for_info_only">
 
     <p>
-    <!--
-      <strong>Example:</strong>
-    -->
     <strong>例:</strong>
     </p>
     <pre class="brush: python">
@@ -98,20 +68,12 @@ min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
 
 
 <p class="for_info_only">
-    <!--
-    <strong>How it is used: </strong>
-    This task will help you understand how some of the built-in functions work on a more precise level.
-    -->
-    <strong>どう使われるか: </strong>
-    この問題は、組み込み関数のいくつかについて、より正確なレベルでどのように機能するかを理解するのに役立ちます。
+ <strong>どう使われるか: </strong>
+ この問題は、組み込み関数のいくつかについて、より正確なレベルでどのように機能するかを理解するのに役立ちます。
 </p>
 
 
 <p>
-    <!--
-    <strong>Precondition: </strong>
-    All test cases are correct and functions don't have to raise exceptions.
-    -->
-    <strong>事前条件: </strong>
-    全てのテストケースは正確で、関数は例外を発生させる必要がありません。
+ <strong>事前条件: </strong>
+ 全てのテストケースは正確で、関数は例外を発生させる必要がありません。
 </p>
