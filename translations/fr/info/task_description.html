@@ -1,0 +1,86 @@
+<p>
+    Dans cette mission, vous devez écrire votre propre implémentation 
+	py3 (mais vous pouvez aussi utiliser py2 pour cela) 
+	des fonctions built-in <strong>min</strong> et <strong>max</strong>.
+	Il vous est interdit d'utiliser certaines fonctions built-in :
+     <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>. 
+    N'oubliez pas qu'il vous faut implémenter deux fonctions dans votre code !
+</p>
+
+<p style="font-weight: bold">
+        max(iterable, *[, key]) vagy min(iterable, *[, key])<br>
+        max(arg1, arg2, *args[, key]) vagy min(arg1, arg2, *args[, key])
+    </p>
+<div style="padding-left: 40px">
+
+    <p>
+        Revoie le plus grand (respectivement le plus petit) item d'un itérable
+		ou le plus grand (resp. le plus petit) de deux arguments ou plus.
+    </p>
+
+    <p>
+       Si un seul argument est fourni, ce doit être un itérable. Le plus grand 
+	   (resp. petit) item de l'itérable est renvoyé. Si deux arguments ou plus sont fournis,
+	   le plus grand (resp. petit) des arguments est renvoyé.	   
+    </p>
+
+    <p>
+       L'argument keyword-only "key" spécifie une fonction à un paramètre 
+        qui est utilisée pour effectuer la comparaison des éléments ( par exemple : key = str.lower ).	   
+    </p>
+
+    <div>
+        Si plusieurs éléments sont maximaux (resp : minimaux), 
+		la fonction retourne le premier rencontré.
+
+    </div>
+
+    <div>
+        <br>
+        <em>-- documentation Python (<a href="https://docs.python.org/3.3/library/functions.html">Fonctions built-in </a></em>
+    </div>
+</div>
+<br>
+
+<!--<p>-->
+    <!--<strong>Tips: </strong>-->
+    <!--You should write <strong>two</strong> functions with the similar functionality.-->
+    <!--They can use the common code, which you can move common part in a separate function.-->
+    <!--This is <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> (don't repeat yourself) principle.-->
+<!--</p>-->
+<p>
+    <strong>Input: </strong> Un argument itérable ou bien plusieurs arguments. 
+	Argument keyword optionnel (une fonction).
+</p>
+
+<p>
+    <strong>Output: </strong> Le plus grand item pour la fonction "max" et le plus petit item pour la fonction "min".
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Exemple:</strong>
+    </p>
+    <pre class="brush: python">
+max(3, 2) == 3
+min(3, 2) == 2
+max([1, 2, 0, 3, 4]) == 4
+min("hello") == "e"
+max(2.2, 5.6, 5.9, key=int) == 5.6
+min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
+    </pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>Utilisation: </strong>
+    Cette mission va vous aider à comprendre plus précisément le fonctionnent de certaines fonctions built-in.
+</p>
+
+
+<p>
+    <strong>Préconditions: </strong>
+    Tous les cas de tests sont corrects et les fonctions ne doivent pas lever d'exceptions.
+</p>
