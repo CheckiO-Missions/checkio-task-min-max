@@ -1,0 +1,83 @@
+<p>
+    In this mission you should write you own py3 implementation (but you can use py2 for this)
+    of the built-in functions <strong>min</strong> and <strong>max</strong>.
+    Some builtin functions are closed here: <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>.
+    Don't forget you should implement two functions in your code.
+</p>
+
+<p style="font-weight: bold">
+        max(iterable, *[, key]) or min(iterable, *[, key])<br>
+        max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
+    </p>
+<div style="padding-left: 40px">
+
+
+    <p>
+        Return the largest (smallest) item in an iterable or the largest(smallest) of two or more arguments.
+    </p>
+
+    <p>
+        If one positional argument is provided, it should be an iterable.
+        The largest (smallest) item in the iterable is returned. If two or more positional arguments are provided,
+        the largest (smallest) of the positional arguments is returned.
+    </p>
+
+    <p>
+        The optional keyword-only key argument specifies a function
+        of one argument that is used to extract a comparison key from each list element (for example, key=str.lower).
+
+    </p>
+
+    <div>
+        If multiple items are maximal (minimal), the function returns the first one encountered.
+    </div>
+
+    <div>
+        <br>
+        <em>-- Python Documentation (<a href="https://docs.python.org/3.3/library/functions.html">Built-in Functions</a>)</em>
+    </div>
+</div>
+<br>
+
+<!--<p>-->
+    <!--<strong>Tips: </strong>-->
+    <!--You should write <strong>two</strong> functions with the similar functionality.-->
+    <!--They can use the common code, which you can move common part in a separate function.-->
+    <!--This is <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> (don't repeat yourself) principle.-->
+<!--</p>-->
+<p>
+    <strong>Input: </strong> One positional argument as an iterable or two or more positional arguments.
+    Optional keyword argument as a function.
+</p>
+
+<p>
+    <strong>Output: </strong> The largest item for the "max" function and the smallest for the "min" function.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <pre class="brush: python">
+max(3, 2) == 3
+min(3, 2) == 2
+max([1, 2, 0, 3, 4]) == 4
+min("hello") == "e"
+max(2.2, 5.6, 5.9, key=int) == 5.6
+min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
+    </pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    This task will help you understand how some of the built-in functions work on a more precise level.
+</p>
+
+
+<p>
+    <strong>Precondition: </strong>
+    All test cases are correct and functions don't have to raise exceptions.
+</p>
