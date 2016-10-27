@@ -1,64 +1,68 @@
 <p>
-    In this mission you should write you own py3 implementation (but you can use py2 for this)
-    of the built-in functions <strong>min</strong> and <strong>max</strong>.
-    Some builtin functions are closed here: <em>import</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>.
-    Don't forget you should implement two functions in your code.
+    In dieser Mission sollst Du Deine eigene Python 3 Variante der built-in Funktionen
+    <strong>min</strong> und <strong>max</strong> implementieren. (Du kannst auch Python 2 nutzen)<br>
+    Die folgenden built-in Funktionen stehen Dir dabei <b>nicht</b> zur Verfügung:
+    <ul>
+        <li><em>__import__</em></li>
+        <li><em>eval</em></li>
+        <li><em>exec</em></li>
+        <li><em>globals</em></li>
+    </ul>
+    Vergiss nicht, dass Du zwei Funktionen implementieren sollst.
 </p>
 
-<p style="font-weight: bold">
-        max(iterable, *[, key]) or min(iterable, *[, key])<br>
-        max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
-    </p>
 <div style="padding-left: 40px">
-
-
     <p>
-        Return the largest (smallest) item in an iterable or the largest(smallest) of two or more arguments.
+        Diese kleine Checkliste könnte hilfreich sein:
     </p>
+    <ul>
+        <li style="font-weight: bold">
+            max(iterable, *[, key]) or min(iterable, *[, key])<br>
+            max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
+        </li>
 
-    <p>
-        If one positional argument is provided, it should be an iterable.
-        The largest (smallest) item in the iterable is returned. If two or more positional arguments are provided,
-        the largest (smallest) of the positional arguments is returned.
-    </p>
+        <li>
+            Gib das größte (kleinste) Element <b>eines</b> iterierbaren Arguments oder das
+            größte (kleinste) von <b>zwei oder mehr</b> Argumenten zurück.
+        </li>
 
-    <p>
-        The optional keyword-only key argument specifies a function
-        of one argument that is used to extract a comparison key from each list element (for example, key=str.lower).
+        <li>
+            Wenn genau ein Positionsargument gegeben ist, sollte es iterierbar sein und sein
+            größtes (kleinstes) Element zurückgegeben werden.<br>
+            Wenn zwei oder mehr Positionsargumente gegeben sind, wird das größte (kleinste) zurückgegeben.
+        </li>
 
-    </p>
+        <li>
+            Das optionale Schlüsselwortargument liefert eine Funktion mit genau einem Argument.<br>
+            Diese Funktion wird verwendet, um einen Vergleichsschlüssel aus jedem Listenelement
+            zu extrahieren (z.&nbsp;B. key = str.lower).
+        </li>
 
-    <div>
-        If multiple items are maximal (minimal), the function returns the first one encountered.
-    </div>
+        <li>
+            Wenn mehrere Elemente maximal (minimal) sind, gibt Deine Funktion das erste, das
+            gefunden wird, zurück.
+        </li>
 
-    <div>
-        <br>
-        <em>-- Python Documentation (<a href="https://docs.python.org/3.3/library/functions.html">Built-in Functions</a>)</em>
-    </div>
+        <p>
+            <em>Wirf ruhig auch einen Blick in die Python Dokumentation:
+                <a href="https://docs.python.org/3.6/library/functions.html">Built-in Functions</a>
+            </em>
+        </p>
+    </ul>
 </div>
-<br>
 
-<!--<p>-->
-    <!--<strong>Tips: </strong>-->
-    <!--You should write <strong>two</strong> functions with the similar functionality.-->
-    <!--They can use the common code, which you can move common part in a separate function.-->
-    <!--This is <a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a> (don't repeat yourself) principle.-->
-<!--</p>-->
 <p>
-    <strong>Input: </strong> One positional argument as an iterable or two or more positional arguments.
-    Optional keyword argument as a function.
+    <strong>Eingabe:</strong> Entweder ein iterierbares Positionsargument <b>oder</b> zwei
+    oder mehr Positionsargumente sowie, optional, ein Schlüsselwortargument als Funktion.
 </p>
 
 <p>
-    <strong>Output: </strong> The largest item for the "max" function and the smallest for the "min" function.
+    <strong>Ausgabe:</strong> Das größte Element für die "max"-Funktion und das kleinste für die "min"-Funktion.
 </p>
-
 
 <div class="for_info_only">
-
     <p>
-        <strong>Example:</strong>
+        <strong>Beispiele:</strong>
     </p>
     <pre class="brush: python">
 max(3, 2) == 3
@@ -70,14 +74,13 @@ min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
     </pre>
 </div>
 
-
 <p class="for_info_only">
-    <strong>How it is used: </strong>
-    This task will help you understand how some of the built-in functions work on a more precise level.
+    <strong>Wozu das gut ist:</strong><br>
+    Diese Aufgabe wird Dir helfen, zu verstehen, wie einige der built-in Funktionen auf
+    tieferer Ebene funktionieren.
 </p>
 
-
 <p>
-    <strong>Precondition: </strong>
-    All test cases are correct and functions don't have to raise exceptions.
+    <strong>Bedingungen:</strong><br>
+    Alle Testfälle sind korrekt und Deine Funktionen müssen keine Ausnahmen behandeln.
 </p>
