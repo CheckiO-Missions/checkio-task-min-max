@@ -1,0 +1,86 @@
+<p>
+    In dieser Mission sollst Du Deine eigene Python 3 Variante der built-in Funktionen
+    <strong>min</strong> und <strong>max</strong> implementieren. (Du kannst auch Python 2 nutzen)<br>
+    Die folgenden built-in Funktionen stehen Dir dabei <b>nicht</b> zur Verfügung:
+    <ul>
+        <li><em>__import__</em></li>
+        <li><em>eval</em></li>
+        <li><em>exec</em></li>
+        <li><em>globals</em></li>
+    </ul>
+    Vergiss nicht, dass Du zwei Funktionen implementieren sollst.
+</p>
+
+<div style="padding-left: 40px">
+    <p>
+        Diese kleine Checkliste könnte hilfreich sein:
+    </p>
+    <ul>
+        <li style="font-weight: bold">
+            max(iterable, *[, key]) or min(iterable, *[, key])<br>
+            max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
+        </li>
+
+        <li>
+            Gib das größte (kleinste) Element <b>eines</b> iterierbaren Arguments oder das
+            größte (kleinste) von <b>zwei oder mehr</b> Argumenten zurück.
+        </li>
+
+        <li>
+            Wenn genau ein Positionsargument gegeben ist, sollte es iterierbar sein und sein
+            größtes (kleinstes) Element zurückgegeben werden.<br>
+            Wenn zwei oder mehr Positionsargumente gegeben sind, wird das größte (kleinste) zurückgegeben.
+        </li>
+
+        <li>
+            Das optionale Schlüsselwortargument liefert eine Funktion mit genau einem Argument.<br>
+            Diese Funktion wird verwendet, um einen Vergleichsschlüssel aus jedem Listenelement
+            zu extrahieren (z.&nbsp;B. key = str.lower).
+        </li>
+
+        <li>
+            Wenn mehrere Elemente maximal (minimal) sind, gibt Deine Funktion das erste, das
+            gefunden wird, zurück.
+        </li>
+
+        <p>
+            <em>Wirf ruhig auch einen Blick in die Python Dokumentation:
+                <a href="https://docs.python.org/3.6/library/functions.html">Built-in Functions</a>
+            </em>
+        </p>
+    </ul>
+</div>
+
+<p>
+    <strong>Eingabe:</strong> Entweder ein iterierbares Positionsargument <b>oder</b> zwei
+    oder mehr Positionsargumente sowie, optional, ein Schlüsselwortargument als Funktion.
+</p>
+
+<p>
+    <strong>Ausgabe:</strong> Das größte Element für die "max"-Funktion und das kleinste für die "min"-Funktion.
+</p>
+
+<div class="for_info_only">
+    <p>
+        <strong>Beispiele:</strong>
+    </p>
+    <pre class="brush: python">
+max(3, 2) == 3
+min(3, 2) == 2
+max([1, 2, 0, 3, 4]) == 4
+min("hello") == "e"
+max(2.2, 5.6, 5.9, key=int) == 5.6
+min([[1,2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0]
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Wozu das gut ist:</strong><br>
+    Diese Aufgabe wird Dir helfen, zu verstehen, wie einige der built-in Funktionen auf
+    tieferer Ebene funktionieren.
+</p>
+
+<p>
+    <strong>Bedingungen:</strong><br>
+    Alle Testfälle sind korrekt und Deine Funktionen müssen keine Ausnahmen behandeln.
+</p>
