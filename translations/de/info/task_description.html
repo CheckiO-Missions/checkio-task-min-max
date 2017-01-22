@@ -2,53 +2,44 @@
     In dieser Mission sollst Du Deine eigene Python 3 Variante der built-in Funktionen
     <strong>min</strong> und <strong>max</strong> implementieren. (Du kannst auch Python 2 nutzen)<br>
     Die folgenden built-in Funktionen stehen Dir dabei <b>nicht</b> zur Verfügung:
-    <ul>
-        <li><em>__import__</em></li>
-        <li><em>eval</em></li>
-        <li><em>exec</em></li>
-        <li><em>globals</em></li>
-    </ul>
+    <em>__import__</em>, <em>eval</em>, <em>exec</em>, <em>globals</em>.
     Vergiss nicht, dass Du zwei Funktionen implementieren sollst.
 </p>
 
+<p style="font-weight: bold">
+    max(iterable, *[, key]) or min(iterable, *[, key])<br>
+    max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
+</p>
+
 <div style="padding-left: 40px">
+
     <p>
-        Diese kleine Checkliste könnte hilfreich sein:
+        Gib das größte (kleinste) Element <b>eines</b> iterierbaren Arguments oder das
+        größte (kleinste) von <b>zwei oder mehr</b> Argumenten zurück.
     </p>
-    <ul>
-        <li style="font-weight: bold">
-            max(iterable, *[, key]) or min(iterable, *[, key])<br>
-            max(arg1, arg2, *args[, key]) or min(arg1, arg2, *args[, key])
-        </li>
 
-        <li>
-            Gib das größte (kleinste) Element <b>eines</b> iterierbaren Arguments oder das
-            größte (kleinste) von <b>zwei oder mehr</b> Argumenten zurück.
-        </li>
+    <p>
+        Wenn genau ein Positionsargument gegeben ist, sollte es iterierbar sein und sein
+        größtes (kleinstes) Element zurückgegeben werden.<br>
+        Wenn zwei oder mehr Positionsargumente gegeben sind, wird das größte (kleinste) zurückgegeben.
+    </p>
 
-        <li>
-            Wenn genau ein Positionsargument gegeben ist, sollte es iterierbar sein und sein
-            größtes (kleinstes) Element zurückgegeben werden.<br>
-            Wenn zwei oder mehr Positionsargumente gegeben sind, wird das größte (kleinste) zurückgegeben.
-        </li>
+    <p>
+        Das optionale Schlüsselwortargument liefert eine Funktion mit genau einem Argument.<br>
+        Diese Funktion wird verwendet, um einen Vergleichsschlüssel aus jedem Listenelement
+        zu extrahieren (z.&nbsp;B. key = str.lower).
+    </p>
 
-        <li>
-            Das optionale Schlüsselwortargument liefert eine Funktion mit genau einem Argument.<br>
-            Diese Funktion wird verwendet, um einen Vergleichsschlüssel aus jedem Listenelement
-            zu extrahieren (z.&nbsp;B. key = str.lower).
-        </li>
+    <p>
+        Wenn mehrere Elemente maximal (minimal) sind, gibt Deine Funktion das erste, das
+        gefunden wird, zurück.
+    </p>
 
-        <li>
-            Wenn mehrere Elemente maximal (minimal) sind, gibt Deine Funktion das erste, das
-            gefunden wird, zurück.
-        </li>
-
-        <p>
-            <em>Wirf ruhig auch einen Blick in die Python Dokumentation:
-                <a href="https://docs.python.org/3.6/library/functions.html">Built-in Functions</a>
-            </em>
-        </p>
-    </ul>
+    <p>
+        <em>Wirf ruhig auch einen Blick in die Python Dokumentation:
+            <a href="https://docs.python.org/3.6/library/functions.html">Built-in Functions</a>
+        </em>
+    </p>
 </div>
 
 <p>
