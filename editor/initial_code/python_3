@@ -16,3 +16,4 @@ if __name__ == '__main__':
     assert min("hello") == "e", "From string"
     assert max(2.2, 5.6, 5.9, key=int) == 5.6, "Two maximal items"
     assert min([[1, 2], [3, 4], [9, 0]], key=lambda x: x[1]) == [9, 0], "lambda key"
+    print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
