@@ -1,0 +1,63 @@
+<body data-author="oduvan">
+<div class="question-answer">
+    <div class="question">
+        Can you give me a small head start?
+    </div>
+    <div class="answer">
+        Sure. As a small head start I want to point out that this is a unique CheckiO mission. Here you  have to write two functions instead of one. But they have a lot in common.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        That was pretty much clear before. Can you give me something else?
+    </div>
+    <div class="answer">
+        <p>The key here is sorting. All you need to do is to use sort function in order to find the maximim or minimum</p>
+
+<p>Here is how your code might look like</p>
+
+<pre class="brush: python">def min(*args, key=None):
+    return get_first_from_sorted(args, key, False)
+
+def max(*args, key=None):
+    return get_first_from_sorted(args, key, True)</pre>
+
+<p>Function <code>get_first_from_sorted</code> is the one you should implement.</p>
+
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        For some reason it doesn’t work
+    </div>
+    <div class="answer">
+        <p>Here is a small hint here, before I give a bigger one</p>
+
+<pre class="brush: python">max(1, 2, 3) == 3
+max([1, 2, 3]) == 3</pre>
+
+<p>You see? It actually has two interfaces you can use. Think about how get_first_from_sorted needs to employ args depending on its size</p>
+
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Looks like it didn’t help. Give me the answer.
+    </div>
+    <div class="answer">
+<pre class="brush: python">def get_first_from_sorted(args, key, reverse):
+    if len(args) == 1:
+        args = iter(args[0])
+    return sorted(args, key=key, reverse=reverse)[0]
+​
+​
+def min(*args, key=None):
+    return get_first_from_sorted(args, key, False)
+​
+​
+def max(*args, key=None):
+    return get_first_from_sorted(args, key, True)</pre>
+
+    </div>
+</div>
+</body>
